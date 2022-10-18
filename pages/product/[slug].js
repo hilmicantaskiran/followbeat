@@ -77,7 +77,7 @@ function ProductDetails({ product, products }) {
               <button
                 type='button'
                 className='add-to-cart'
-                onClick=""
+                onClick={() => onAdd(product, qty)}
               >
                 Add to Cart
               </button>
