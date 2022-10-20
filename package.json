@@ -11,12 +11,14 @@
   "dependencies": {
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.1",
+    "@stripe/stripe-js": "^1.42.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.6.0",
-    "sanity": "^2.33.2"
+    "sanity": "^2.33.2",
+    "stripe": "^10.14.0"
   },
   "devDependencies": {
     "eslint": "8.25.0",
