@@ -25,7 +25,7 @@ npm install
 yarn install
 ```
 
-If you're running your own Sanity project with the example movie dataset, go to `lib/sanity.js` and change the following lines:
+If you're running your own Sanity project with the dataset, go to `lib/sanity.js` and change the following lines:
 
 ```
   projectId: 'YOUR_PROJECT_ID',
