@@ -662,3 +662,51 @@ a {
 .quantity-desc-cart .plus {
   color: rgb(49, 168, 49);
 }
+
+.success-wrapper, .cancel-wrapper{
+    background-color: white;
+    min-height: 60vh;
+
+}
+.success, .cancel{
+    width: 1000px;
+    margin: 150px auto auto;
+    background-color: #dcdcdc;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.success .icon {
+    color: green;
+    font-size: 40px;
+}
+.success h2{
+    text-transform: capitalize;
+    margin: 0;
+    font-weight: 900;
+    font-size: 40px;
+    color:#324d67;
+}
+.success .email-msg{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.cancel p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.success .description{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+.success .description .email{
+    margin-left: 5px;
+    color: #f02d34;
+}

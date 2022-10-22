@@ -7,10 +7,15 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-
 import { useStateContext } from '../../context/StateContext';
 
 function ProductDetails({ product, products }) {
-  const { image, name, details, price } = product;
-
   const [index, setIndex] = useState(0);
-  const { incQty, decQty, qty, onAdd } = useStateContext();
+  const { image, name, details, price } = product;
+  const { incQty, decQty, qty, onAdd, setShowCart } = useStateContext();
+
+  const handleBuyNow = () => {
+    onAdd(product, qty);
+
+    setShowCart(true);
+  }
 
   return (
     <div>
@@ -85,7 +90,7 @@ function ProductDetails({ product, products }) {
               <button
                 type='button'
                 className='buy-now'
-                onClick={() => onAdd(product, qty)}
+                onClick={handleBuyNow}
               >
                 Buy Now
               </button>
